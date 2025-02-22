@@ -7,6 +7,8 @@ from discord.ext import commands
 from discord.ext.commands import BucketType
 
 json_path = os.path.join(os.getcwd(), "mainbank.json")
+token = os.getenv("TOKEN")
+
 
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
@@ -290,4 +292,4 @@ async def tg2(ctx, member: discord.Member, time:int):
 
 
 
-bot.run("MTMzNTYwMDIzNzA2NjA2Mzk0Ng.G-7NI0.Na12CrNGxCATq7iy39jZnTjRRqdlE8aaEM1Cx0")
+bot.run(token)
